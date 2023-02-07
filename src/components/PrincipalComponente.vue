@@ -7,7 +7,7 @@
                 <font-awesome-icon icon="fa-solid fa-magnifying-glass" color="white" size="2xl" />
             </button>
         </div>
-        <CartaCiudad v-if='searchResults' :results="searchResults" />
+        <CartaCiudad v-if='searchResults && noFavourite' :results="searchResults" state="new" @added="modifyNoFavourite"/>
     </main>
 </template>
 
@@ -17,8 +17,10 @@ import CartaCiudad from './CartaCiudad.vue';
 
 const searchInput = ref("");
 const searchResults = ref(null);
+const noFavourite = ref(true);
 
 const findForecast = () => {
+    noFavourite.value=true;
     const options = {
         method: 'GET',
         headers: {
@@ -37,5 +39,10 @@ const findForecast = () => {
             }
         })
         .catch(err => console.error(err));
+    searchInput.value="";
 } 
+
+const modifyNoFavourite=()=>{
+    noFavourite.value=false;
+}
 </script>

@@ -1,7 +1,7 @@
 <script setup>
-import EncabezadoComponente from './components/EncabezadoComponente.vue'
+import EncabezadoComponente from './components/EncabezadoComponente.vue';
 import FavoritosComponente from './components/FavoritosComponente.vue';
-import PrincipalComponente from './components/PrincipalComponente.vue'
+import PrincipalComponente from './components/PrincipalComponente.vue';
 </script>
 
 <template>

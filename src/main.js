@@ -10,10 +10,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faTemperatureHalf, faMagnifyingGlass, faHeartCirclePlus, faSun, faCloudSun, faCloudShowersHeavy, faCloud } from '@fortawesome/free-solid-svg-icons'
+import { faTemperatureHalf, faMagnifyingGlass, faHeartCirclePlus,faHeartCircleMinus, faSun, faCloudSun, faCloudShowersHeavy, faCloud } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add( faTemperatureHalf, faMagnifyingGlass, faHeartCirclePlus, faSun, faCloudSun, faCloudShowersHeavy, faCloud)
+library.add( faTemperatureHalf, faMagnifyingGlass, faHeartCirclePlus,faHeartCircleMinus, faSun, faCloudSun, faCloudShowersHeavy, faCloud)
 
 
 createApp(App)

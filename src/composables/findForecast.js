@@ -1,9 +1,8 @@
-// mouse.js
 import { ref, unref, isRef, watchEffect} from 'vue'
 
 // by convention, composable function names start with "use"
 export function useFindForecast(url) {
-    console.log('recibiendo parametro en composable');
+    console.log('Received parameter url:');
     console.log(url);
     const data = ref(null)
     const error = ref(null)
@@ -26,7 +25,9 @@ export function useFindForecast(url) {
             // unref() will return the ref value if it's a ref
             // otherwise the value will be returned as-is
             const res = await fetch(urlValue, options)
-            data.value = await res.json()
+            const response = await res.json();
+            data.value=response.response[0];
+            console.log(data.value);
         } catch (e) {
             error.value = e
         }

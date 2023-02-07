@@ -15,6 +15,10 @@ export const useFavouriteStore = defineStore("FavouriteStore",{
          setList(newFavourite){
              this.favList.push(newFavourite);
              localStorage.setItem("favourites",JSON.stringify(this.favList))
-         }
+         },
+         updateList(oldFavourite){
+            this.favList.splice(this.favList.findIndex((ciudad)=>ciudad==oldFavourite),1);
+            localStorage.setItem("favourites",JSON.stringify(this.favList))
+        }
     }
 })
