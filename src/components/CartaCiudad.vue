@@ -1,6 +1,6 @@
 <template>
     <div class="mb-8 pt-4 relative">
-        <div class="flex py-6 px-3 bg-weather-secondary rounded-md shadow-md">
+        <div :class="{ 'bg-secundario': (state=='new') }" class="flex py-6 px-3 rounded-md shadow-md">
             <div class="flex flex-col flex-1">
                 <h2 class="text-3xl">{{ results.place.name }}</h2>
                 <h3>{{ results.place.country }}</h3>

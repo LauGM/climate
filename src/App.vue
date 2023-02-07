@@ -8,7 +8,10 @@ import PrincipalComponente from './components/PrincipalComponente.vue';
   <div class="flex flex-col bg-primario">
     <EncabezadoComponente />
     <PrincipalComponente />
-    <FavoritosComponente />
+    <Suspense>
+      <FavoritosComponente />
+      <template #fallback>LOADING...</template>
+    </Suspense>
   </div>
 </template>
 

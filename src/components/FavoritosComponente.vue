@@ -35,7 +35,6 @@ function getForecast() {
             receivedList.value.push(dataOk);
             console.log(receivedList.value);
         });
-        /* receivedList.value.push(data); */
     });
 };
 
