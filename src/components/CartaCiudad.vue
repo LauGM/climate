@@ -8,7 +8,7 @@
                     data-bs-placement="right" title="Add to favourites"><font-awesome-icon
                         icon="fa-solid fa-heart-circle-plus" color="white" size="xl" /></button>
                 <button v-else @click="removeStorage()" class="text-left" data-bs-toggle="tooltip"
-                    data-bs-placement="right" title="Add to favourites"><font-awesome-icon
+                    data-bs-placement="right" title="Remove from favourites"><font-awesome-icon
                         icon="fa-solid fa-heart-circle-minus" color="white" size="xl" /></button>
 
             </div>
@@ -53,7 +53,9 @@ const icons = [
     { weather: "Mostly Cloudy", icon: "fa-cloud" },
     { weather: "Partly Cloudy", icon: "fa-cloud-sun" },
     { weather: "Rain Showers", icon: "fa-cloud-showers-heavy" },
+    { weather: "Rain", icon: "fa-cloud-showers-heavy" },
     { weather: "Showers", icon: "fa-cloud-showers-heavy" },
+    { weather: "Isolated Showers", icon: "fa-cloud-sun-rain" },
 ];
 const icon = ref("");
 const found = ref(null);
