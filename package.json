@@ -14,12 +14,14 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "netlify": "^13.1.2",
     "pinia": "^2.0.30",
     "vue": "^3.2.45"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
     "autoprefixer": "^10.4.13",
+    "netlify-cli": "^12.10.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
     "vite": "^4.1.0"
