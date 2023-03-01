@@ -56,6 +56,7 @@ const icons = [
     { weather: "Rain", icon: "fa-cloud-showers-heavy" },
     { weather: "Showers", icon: "fa-cloud-showers-heavy" },
     { weather: "Isolated Showers", icon: "fa-cloud-sun-rain" },
+    { weather: "Scattered Showers", icon: "fa-cloud-sun-rain" },
 ];
 const icon = ref("");
 const found = ref(null);

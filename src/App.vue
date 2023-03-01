@@ -8,15 +8,12 @@ import PrincipalComponente from './components/PrincipalComponente.vue';
   <div class="flex flex-col bg-primario">
     <EncabezadoComponente />
     <PrincipalComponente />
-    <Suspense>
-      <FavoritosComponente />
-      <template #fallback>LOADING...</template>
-    </Suspense>
+    <FavoritosComponente />
   </div>
 </template>
 
 <style>
-  body{
-    background-color: #006684;
-  }
+body {
+  background-color: #006684;
+}
 </style>

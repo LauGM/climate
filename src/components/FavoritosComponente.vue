@@ -27,6 +27,7 @@ watch(ciudades, actualizacion=>{
 
 function getForecast() {
     ciudades.forEach((ciudad) => {
+        setTimeout(() => {
         console.log(ciudad)
         const { data, error, retry } = useFindForecast(`https://aerisweather1.p.rapidapi.com/forecasts/${ciudad},ar,ar`)
         //this watcher is the key to resolve async delay
@@ -35,9 +36,10 @@ function getForecast() {
             receivedList.value.push(dataOk);
             console.log(receivedList.value);
         });
+    }, 1000);
     });
 };
 
-ciudades ? getForecast() : console.log("nada en ciudades guardadas");
+ciudades ?  getForecast() : console.log("nada en ciudades guardadas");
 
 </script>
